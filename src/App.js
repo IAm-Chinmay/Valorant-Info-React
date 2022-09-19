@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Redirect
+} from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import AgentCards from './Pages/Agents-Cards';
+import AgentInfoPage from './Pages/AgentInfoPage';
+
+import './App.css'
+
+const App = () =>{
+
+    const agentInfoStyle = {
+        backgroundColor : 'black'
+    }
+    return(
+    //    <AgentInfo/>
+        <Router>
+            {/* <Redirect exact path='/' /> */}
+            <Switch>
+                <Route exact  path='/agentinfo'>
+                {/* className='agentinfo-css' */}
+                <div className='agent-back'>
+                    <AgentInfoPage/>
+                    </div>
+                </Route>
+                <div className='home-page'>
+                <Route path='/'>
+                    <AgentCards/>
+                </Route>
+                </div>
+            </Switch>   
+        </Router>
+    );
 }
 
 export default App;
