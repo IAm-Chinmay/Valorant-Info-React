@@ -7,24 +7,22 @@ import {
 } from 'react-router-dom'
 
 import AgentCards from './Pages/Agents-Cards';
+import AgentInfoMain from './Pages/AgentInfoMain';
 import AgentInfoPage from './Pages/AgentInfoPage';
 
 import './App.css'
 
 const App = () =>{
 
-    const agentInfoStyle = {
-        backgroundColor : 'black'
-    }
     return(
     //    <AgentInfo/>
         <Router>
             {/* <Redirect exact path='/' /> */}
             <Switch>
-                <Route exact  path='/agentinfo'>
+                <Route exact  path='/agentinfo/:uuid'>
                 {/* className='agentinfo-css' */}
                 <div className='agent-back'>
-                    <AgentInfoPage/>
+                    <AgentInfoMain/>
                     </div>
                 </Route>
                 <div className='home-page'>

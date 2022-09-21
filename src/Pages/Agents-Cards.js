@@ -1,5 +1,5 @@
 import React , {useState , useEffect} from "react";
-import CardContainer from "../CardContainer";
+import CardContainer from "../Components/containers/CardContainer";
 import Ability from "../Components/containers/Abilites-Cards/Ability";
 // import './Agents-Cards.css'
 
@@ -19,7 +19,9 @@ const AgentCards = () =>{
              const newData = parsedData.data.filter(data => data.isPlayableCharacter === true);
             console.log(newData);
             setLoadedAgents(newData);
-            // console.log(loadedAgents)
+           const testData = parsedData.data.filter(data => data.uuid === 'dade69b4-4f5a-8528-247b-219e5a1facd6')
+           console.log(testData); 
+           // console.log(loadedAgents)
             // setDescription
             // setRoleName
             // setDescription

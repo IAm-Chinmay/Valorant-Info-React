@@ -38,11 +38,11 @@
 .agent-title-css{
     display: flex;
     position: absolute;
-    top: 20vh;
+    top: 10vh;
     left: 67vh;
     
 }
-.agent-title-css h2{
+.agent-title-css h1{
     color: aliceblue;
     font-weight: 600;
     font-family: 'Quicksand', sans-serif;
@@ -50,9 +50,9 @@
 
 .agent-title-css img{
     padding: 0px;
-    max-width: 20%;
+    max-width: 50%;
     margin-top: -1.5vh;
-    margin-left: 2vh;
+    margin-left: 3vh;
 }
 
 .role-name-css{
@@ -81,12 +81,24 @@
 
 .agent-img{
     position: absolute;
-    top: 15vh;
-    left: 20vh;
+    top: -8vh;
+    left: -36vh;
+    height: 100%;
+    width: 110%;
+    animation: agent-move 2s ;
     
 }
 
+.agent-img img{
+    top: 1vh;
+    left: 10vh;
+    height: 105%;
+    width:70%;
+    filter: brightness(0.9);
+}
+
 .abilities-cards-css{
+    display: flex;
     position: absolute;
     top: 60vh;
     left: 10vh;
@@ -94,12 +106,17 @@
 
 .abilities-text-css{
     position: absolute;
-    top: 60vh;
-    left: 37vh; 
+    top: 55vh;
+    left: 80vh; 
 }
 
-.abilities-text-css h2{
+.abilities-text-css h1{
     color: aliceblue;
     font-weight: 400;
     font-family: 'Quicksand', sans-serif;
+}
+
+@keyframes agent-move {
+    from { left : -74vh}
+    to { left : -36vh}
 }

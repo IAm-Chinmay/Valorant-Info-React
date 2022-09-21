@@ -4,9 +4,10 @@ import {Link} from 'react-router-dom';
 import './Card-Item.css'
 
 const CardItem = props =>{
+  const uuid = props.uuid;
     return(
         <React.Fragment>
-  <Link to = '/agentinfo' >
+  <Link to = {`/agentinfo/${uuid}`} >
         <div className="" onTouchStart="this.classList.toggle('hover');">
         <div className="container">
           <div className="front" style={{

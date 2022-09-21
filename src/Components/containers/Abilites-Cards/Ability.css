@@ -1,10 +1,15 @@
 /* body {
 	background: #262a2b;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.p-css{
+	font-family: 'Roboto Condensed', sans-serif;
+}
 
 .ability-show-css{
 	padding : 5px;
-	max-width : 20%;
+	max-width : 30%;
 }
 
 .tilesWrap {
@@ -12,11 +17,12 @@
 	margin: 50px auto;
 	list-style: none;
 	text-align: center;
+	z-index: 1;
 }
 .tilesWrap li {
 	display: inline-block;
-	width: 30%;
-	min-width: 200px;
+	width: 50%;
+	min-width: 250px;
 	max-width: 230px;
 	padding: 80px 20px 40px;
 	position: relative;
@@ -113,8 +119,8 @@
 }
 .tilesWrap li:nth-child(1):before {
 	background: #C9FFBF;
-background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);
-background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+background: -webkit-linear-gradient(to right, #c21500, #C9FFBF);
+background: linear-gradient(to right, #c21500, #C9FFBF);
 }
 .tilesWrap li:nth-child(2):before {
 	background: #f2709c;

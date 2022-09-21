@@ -1,12 +1,8 @@
 import React , {useEffect} from "react";
-import CardItem from "./Components/containers/Card-Items";
+import CardItem from "./Card-Items";
 import './CardContainer.css'
 
 const CardContainer = props =>{
-
-  
-
-
 
 useEffect(()=>{
     console.log()
@@ -19,6 +15,7 @@ useEffect(()=>{
 
            props.agents.map(agent => (
             <CardItem 
+            uuid = {agent.uuid}
             frontTitle = {agent.displayName}
             frontSubtitle = {agent.role.displayName} 
             description = {agent.description} 

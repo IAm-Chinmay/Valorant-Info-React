@@ -1,55 +1,79 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Ability from "../containers/Abilites-Cards/Ability";
 import "./AgentInfo.css";
 
-const AgentInfo = () => {
+const AgentInfo = (props) => {
+  // const uuid = props.uuid;
+
+  // const [loadedAbility, setLoadedAbility] = useState();
+
+  // console.log(uuid);
+
+  // useEffect(() => {
+  //   const fetchAbility = async () => {
+  //     try {
+  //       const responseData = await fetch("https://valorant-api.com/v1/agents");
+  //       const parsedData = await responseData.json();
+  //       console.log(parsedData.data);
+  //       const abilityData = parsedData.data.filter((uid) => uid.uuid === uuid);
+  //       console.log(abilityData);
+  //       setLoadedAbility(abilityData.map((a) => a.abilities));
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
+  //   fetchAbility();
+  // }, []);
+
+  // console.log(loadedAbility.map(a => a.displayName));
+
   return (
     <React.Fragment>
       <main>
-      <div className="main-agentinfo">
-        <img src="https://wallpaperaccess.com/full/5785159.png" style={{
-          img : 'no-repeat center center fixed' 
-        }}
-         className="back-AgentInfo" />
-        <div className="agent-img">
+        <div className="main-agentinfo">
           <img
-            src="https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/displayicon.png"
-            alt="charc-img"
+            src="https://wallpaperaccess.com/full/5785159.png"
+            style={{
+              img: "no-repeat center center fixed",
+            }}
+            className="back-AgentInfo"
           />
+          <div className="agent-img">
+            <img src={props.charImg} alt="charc-img" />
+          </div>
+          <div className="agent-title-css">
+            <h1>{props.charName}</h1>
+            <img src={props.roleImg} alt="role-img" />
+          </div>
+          <div className="role-name-css">
+            <h3>
+              <strong>Role : {props.roleName}</strong>
+            </h3>
+          </div>
+          <div className="agent-info-para">
+            <p>{props.roleDesciption}</p>
+          </div>
+          <div className="audio-control-css">
+            <h4>Look what agent says : </h4>
+            <audio controls autoPlay>
+              <source src={props.voiceline} type="audio/wav" />
+            </audio>
+          </div>
+          <div className="abilities-text-css">
+            <h1>Abilites :</h1>
+          </div>
+          <div className="abilities-cards-css">
+            {props.abilities.map((data,index) => (
+              <Ability
+                abilityName={data.displayName}
+                abilityImg={data.displayIcon}
+                abilityDescription={data.description}
+                number = {1 + index}
+              />
+            ))}
+          </div>
         </div>
-        <div className="agent-title-css">
-          <h2>CHAMBER</h2>
-          <img
-            src="https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png"
-            alt="role-img"
-          />
-        </div>
-        <div className="role-name-css">
-          <h3>Role : Sentinals</h3>
-        </div>
-        <div className="agent-info-para">
-          <p>
-            Sentinels are defensive experts who can lock down areas and watch
-            flanks, both on attacker and defender rounds.
-          </p>
-        </div>
-        <div className="audio-control-css">
-          <h4>Look what agent says : </h4>
-          <audio controls>
-            <source
-              src="https://media.valorant-api.com/sounds/204662687.wav"
-              type="audio/wav"
-            />
-          </audio>
-        </div>
-        <div className="abilities-text-css">
-          <h2>Abilites :</h2>
-        </div>
-        <div className="abilities-cards-css">
-          <Ability />
-        </div>
-      </div>
       </main>
     </React.Fragment>
   );
