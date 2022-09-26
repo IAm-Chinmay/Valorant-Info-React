@@ -14,7 +14,12 @@
  }
 
  .agent-back{
-    background-color: black;
+     background-color: rgb(62, 61, 61);
+ }
+
+ .hero-home{
+   z-index: -1;
+   background: url('https://images8.alphacoders.com/121/1210591.jpg');
  }
 
 

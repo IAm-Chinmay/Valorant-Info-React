@@ -55,8 +55,8 @@ const AgentInfo = (props) => {
             <p>{props.roleDesciption}</p>
           </div>
           <div className="audio-control-css">
-            <h4>Look what agent says : </h4>
-            <audio controls autoPlay>
+            {/* <h4>Look what agent says : </h4> */}
+            <audio hidden controls autoPlay>
               <source src={props.voiceline} type="audio/wav" />
             </audio>
           </div>

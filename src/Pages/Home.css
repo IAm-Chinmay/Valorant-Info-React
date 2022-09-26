@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+video{
+    pointer-events: none;
+    overflow: hidden;
+    object-position: 50% center;
+    height: 70vh;
+    object-fit: cover;
+    width: 100%;
+    top: 0vh;
+    position: absolute;
+    z-index: 1;
+    filter: blur(2px) ;
+}
+
+.intro-video{
+    display: block;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 70vh;
+    border: solid;
+}
+
+.intro-video h4{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    color: aliceblue;
+    top: 17vh;
+    left: 80vh;
+    z-index: 2;
+}
+
+svg{
+    padding: 96px;
+    position: absolute;
+    margin: 198px;
+    top: -13vh;
+    filter: drop-shadow(0 0 0.75em rgba(0,0,0,.3));
+    z-index: 3;
+}
+
+
+.para-css{
+
+    /* background-color: rgb(255, 0, 0); */
+    /* background-color: red; */
+    height: 70vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+}
+
+.box-para{
+    /* background-color: rgb(5, 5, 5); */
+    /* background-color: rebeccapurple; */
+    background: transparent;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 70vh;
+    height: 50vh;
+    border-radius: 50px;
+    text-align: center;
+/* background: linear-gradient(225deg, #2c2c2c, #101010);
+ */
+/* background-color: rgb(51, 50, 50); */
+/* box-shadow:  -27px 27px 54px #454444,
+             27px -27px 54px #3c3b3b; */
+
+text-align: center;
+color: rgba(7, 6, 6, 0.878);
+border: solid;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(5px);
+
+}
+.box-para :hover{
+   
+}
+
+.box-para p{
+    font-family: 'Permanent Marker', cursive;
+    /* font-weight: 700; */
+}
+
+.para-css :hover{
+    animation: parares 2.5s linear infinite;
+}
+
+.content-css{
+    position: relative;
+    background: url('https://images7.alphacoders.com/120/1203243.jpg');
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+   
+}
+
+
+@keyframes float {
+    0%{
+        transform:  translateY(0px)
+    }
+
+    20%{
+        transform: translateY(2px);
+    }
+
+    30%{
+        transform: translateY(4px);
+    }
+    60%{
+        transform: translateY(6px);
+
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes parares {
+    10%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(-2px);
+    }
+}
+
+
+
+/* width={"1366"} height ={"350"} */

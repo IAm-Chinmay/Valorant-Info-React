@@ -8,7 +8,8 @@ import {
 
 import AgentCards from './Pages/Agents-Cards';
 import AgentInfoMain from './Pages/AgentInfoMain';
-import AgentInfoPage from './Pages/AgentInfoPage';
+import Navbar from './Components/imports/Navbar';
+import Homepage from './Pages/Home';
 
 import './App.css'
 
@@ -16,7 +17,9 @@ const App = () =>{
 
     return(
     //    <AgentInfo/>
+    <>
         <Router>
+        <Navbar/>
             {/* <Redirect exact path='/' /> */}
             <Switch>
                 <Route exact  path='/agentinfo/:uuid'>
@@ -25,13 +28,23 @@ const App = () =>{
                     <AgentInfoMain/>
                     </div>
                 </Route>
+                <Route path='/agents'>
                 <div className='home-page'>
-                <Route path='/'>
                     <AgentCards/>
+                </div>
+                </Route>
+                <div className='hero-home'>
+                <Route path = '/'>
+                    <Homepage/>
                 </Route>
                 </div>
             </Switch>   
+            {/* <footer style={{backgroundColor: "rgb(62, 61, 61)",height : "90vh"}}>
+                <label></label>
+            </footer> */}
+
         </Router>
+        </>
     );
 }
 
