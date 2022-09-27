@@ -1,7 +1,6 @@
 import React , {useState , useEffect} from "react";
 import CardContainer from "../Components/containers/CardContainer";
-import Ability from "../Components/containers/Abilites-Cards/Ability";
-// import './Agents-Cards.css'
+import './Agents-Cards.css'
 
 const AgentCards = () =>{
 

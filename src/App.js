@@ -3,13 +3,14 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Redirect
+    // Redirect
 } from 'react-router-dom'
 
 import AgentCards from './Pages/Agents-Cards';
 import AgentInfoMain from './Pages/AgentInfoMain';
 import Navbar from './Components/imports/Navbar';
 import Homepage from './Pages/Home';
+import WeaponLoader from './Components/containers/weaponLoader';
 
 import './App.css'
 
@@ -32,6 +33,9 @@ const App = () =>{
                 <div className='home-page'>
                     <AgentCards/>
                 </div>
+                </Route>
+                <Route path={'/weapons'}>
+                    <WeaponLoader/>
                 </Route>
                 <div className='hero-home'>
                 <Route path = '/'>

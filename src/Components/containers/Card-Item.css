@@ -162,7 +162,7 @@
   }
 
   .back .inner p{
-        color : #000;
+        color : rgb(212, 212, 212);
   }
   
   .front .inner p:after{
