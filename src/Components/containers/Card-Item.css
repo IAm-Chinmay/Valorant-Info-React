@@ -37,7 +37,7 @@
     cursor: pointer;
   }
   
-  .container{
+  .container-ag{
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     -webkit-perspective: 1000px;
@@ -95,8 +95,8 @@
               backface-visibility: hidden;
       border-radius: 10px;
   }
-  .container:hover .front,
-  .container:hover .back{
+  .container-ag:hover .front,
+  .container-ag:hover .back{
       -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
       transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
       -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -125,30 +125,35 @@
       -webkit-perspective: inherit;
               perspective: inherit;
       z-index: 2;
+    
+  }
+
+  .inner p{
+        color : #fff;
   }
   
-  .container .back{
+  .container-ag .back{
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg);
       -webkit-transform-style: preserve-3d;
               transform-style: preserve-3d;
   }
   
-  .container .front{
+  .container-ag .front{
       -webkit-transform: rotateY(0deg);
               transform: rotateY(0deg);
       -webkit-transform-style: preserve-3d;
               transform-style: preserve-3d;
   }
   
-  .container:hover .back{
+  .container-ag:hover .back{
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
   
-  .container:hover .front{
+  .container-ag:hover .front{
     -webkit-transform: rotateY(-180deg);
             transform: rotateY(-180deg);
     -webkit-transform-style: preserve-3d;

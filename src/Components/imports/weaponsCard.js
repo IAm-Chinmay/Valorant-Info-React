@@ -9,7 +9,7 @@ const WeaponCard = props => {
   return (
     <ul className="weapon-list">
       <li>
-    <div className="main-container">
+    <div className="m-container">
     <div className="container">
       <div className="card">
         <div className="imgBx">

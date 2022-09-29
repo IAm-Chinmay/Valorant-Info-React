@@ -9,7 +9,7 @@ const CardItem = props =>{
         <React.Fragment>
   <Link to = {`/agentinfo/${uuid}`} >
         <div className="" onTouchStart="this.classList.toggle('hover');">
-        <div className="container">
+        <div className="container-ag">
           <div className="front" style={{
             backgroundImage :
             `url(${props.displayIcon})`}}>

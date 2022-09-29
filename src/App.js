@@ -11,6 +11,8 @@ import AgentInfoMain from './Pages/AgentInfoMain';
 import Navbar from './Components/imports/Navbar';
 import Homepage from './Pages/Home';
 import WeaponLoader from './Components/containers/weaponLoader';
+import MapPage from './Pages/MapPage';
+import Loader from './Components/imports/loader';
 
 import './App.css'
 
@@ -28,6 +30,14 @@ const App = () =>{
                 <div className='agent-back'>
                     <AgentInfoMain/>
                     </div>
+                </Route>
+                <Route path={'/test'}>
+                <Loader/>
+                </Route>
+                <Route path={'/maps'}>
+                    <div className='maps-back'>
+                 <MapPage/>   
+                 </div>
                 </Route>
                 <Route path='/agents'>
                 <div className='home-page'>
