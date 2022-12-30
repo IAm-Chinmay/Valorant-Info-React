@@ -6,3 +6,9 @@
      -o-background-size: cover;
      background-size: cover;
 } */
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  /* background-color: #2c2b2b; */
+}

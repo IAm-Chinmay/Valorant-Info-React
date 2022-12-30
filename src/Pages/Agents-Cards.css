@@ -1,4 +1,8 @@
-.loadedAgents-css{
-    height: 100%;
+.loadedAgents-css {
+  height: 100%;
+}
 
+body {
+  margin: 0;
+  padding: 0;
 }
