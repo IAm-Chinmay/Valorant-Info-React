@@ -1,0 +1,14 @@
+.main-div{
+ 
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    background-color: #131313;
+    padding: 52px 5px;
+    background: url('https://images4.alphacoders.com/114/1149475.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(5px);
+  }

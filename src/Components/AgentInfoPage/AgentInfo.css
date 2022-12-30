@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/* main{
+
+    background-color: black;
+} */
+
+.main-agentinfo{
+    position: relative;
+    overflow: hidden;
+}
+
+.back-AgentInfo{
+        z-index: -1;
+        /* */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 120%;
+         width: 120%;
+        filter: blur(2px);
+        -webkit-filter: blur(2px); 
+}
+
+.audio-control-css{
+    position: absolute;
+    top: 44vh;
+    left: 67vh;
+}
+
+.audio-control-css h4{
+    color: aliceblue;
+    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+    margin: 1vh;
+}
+
+.agent-title-css{
+    display: flex;
+    position: absolute;
+    top: 10vh;
+    left: 67vh;
+    
+}
+.agent-title-css h1{
+    color: aliceblue;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.agent-title-css img{
+    padding: 0px;
+    max-width: 50%;
+    margin-top: -1.5vh;
+    margin-left: 3vh;
+}
+
+.role-name-css{
+    position: absolute;
+    top: 28vh;
+    left: 67vh;
+}
+
+.role-name-css h3{
+    color: aliceblue;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.agent-info-para{
+    position: absolute;
+    top: 37vh;
+    left: 67vh;
+}
+
+.agent-info-para p{
+    color: aliceblue;
+    /* font-weight: 100; */
+    font-family: 'Quicksand', sans-serif;
+}
+
+.agent-img{
+    position: absolute;
+    top: -8vh;
+    left: -36vh;
+    height: 100%;
+    width: 110%;
+    animation: agent-move 2s ;
+    
+}
+
+.agent-img img{
+    top: 1vh;
+    left: 10vh;
+    height: 105%;
+    width:70%;
+    filter: brightness(0.9);
+}
+
+.abilities-cards-css{
+    display: flex;
+    position: absolute;
+    top: 60vh;
+    left: 10vh;
+}
+
+.abilities-text-css{
+    position: absolute;
+    top: 55vh;
+    left: 80vh; 
+}
+
+.abilities-text-css h1{
+    color: aliceblue;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@keyframes agent-move {
+    from { left : -74vh}
+    to { left : -36vh}
+}

@@ -1,0 +1,40 @@
+
+.home-page{
+    /* mixed side : https://c4.wallpaperflare.com/wallpaper/486/247/805/valorant-sage-valorant-jett-valorant-raze-valorant-viper-valorant-hd-wallpaper-preview.jpg */
+     /* comic neon : https://images6.alphacoders.com/127/thumbbig-1273161.webp */
+     /* mid comic neon : https://images2.alphacoders.com/120/1204932.jpg */
+     
+ 
+    background: url('https://preview.redd.it/msn46mcmgol61.jpg?width=3840&format=pjpg&auto=webp&s=391290f2ae64668f0db1e28146a36dea89ec855a')
+     no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+ }
+
+ .agent-back{
+     /* background-color: rgb(62, 61, 61); */
+ }
+
+ .hero-home{
+   z-index: -1;
+   background: url('https://images8.alphacoders.com/121/1210591.jpg');
+ }
+
+.maps-back{
+    height: 100%;
+    width: 100%;
+    background: url('https://wallpapercave.com/wp/wp8730496.jpg')
+    no-repeat center center fixed;  
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(5px);
+}
+
+/* body{
+    background-color: rgb(23, 23, 23);
+} */
