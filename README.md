@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-See Live Project :> [Visit Live Website](https://valorant-info-6969.herokuapp.com)
+See Live Project :> [Visit Live Website](https://know-valorant.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
